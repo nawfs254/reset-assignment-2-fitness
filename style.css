@@ -159,7 +159,7 @@ nav.navbar{
 .section-title{
     font-size: 3rem;
     font-weight: 900;
-    margin: 1rem 0;
+    padding: 1rem 0;
 }
 
 .section-description{
@@ -230,6 +230,84 @@ nav.navbar{
     margin: 1rem 0;
 }
 
+/* Team members */
+
+.team-members{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background: rgb(34, 34, 34);
+}
+
+.team-section{
+    background: black;
+    color: white;
+}
+
+.member-img{
+    width: 300px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.member-img h3{
+    font-weight: 800;
+    padding: 0 1rem;
+}
+.member-img p{
+    padding: 0 1rem 1rem 1rem;
+}
+
+
+#member-img1{
+    background: linear-gradient(180deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./assets/images/trainer1.png);   
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem;
+}
+
+#member-img2{
+    background: linear-gradient(180deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./assets/images/trainer2.png);   
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem;
+}
+
+#member-img3{
+    background: linear-gradient(180deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./assets/images/trainer3.png);   
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem;
+    
+}
+
+#member-img4{
+    background: linear-gradient(180deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./assets/images/trainer4.png);   
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem;
+}
+
+#member-img5{
+    background: linear-gradient(180deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./assets/images/trainer5.png);   
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem;
+}
+
+#member-img6{
+    background: linear-gradient(180deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./assets/images/trainer6.png);   
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem;
+}
 /*For Tablet*/
 @media only screen and (max-width:768px){
     nav.navbar{
@@ -314,5 +392,9 @@ nav.navbar{
 
     .card-container{
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .team-members{
+        grid-template-columns: repeat(1,1fr);
     }
 }
