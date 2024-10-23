@@ -144,6 +144,49 @@ nav.navbar{
     border-radius: 50%;
 }
 
+/* habit section */
+.habit-section{
+    background-color: black;
+}
+
+.section-head{
+    text-align: center;
+    padding: 2rem 0;
+    color: white;
+}
+
+.section-title{
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.section-description{
+    color: var(--gray);
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 0;
+    color: white;
+}
+
+.card{
+    text-align: center;
+}
+
+.card img{
+    border-radius: 50%;
+}
+
+.card-title{
+    padding: 0.5rem 0;
+}
+
+.card-description{
+    color: var(--gray);
+    padding: 0.5rem 0;
+}
 
 /*For Tablet*/
 @media only screen and (max-width:768px){
@@ -170,17 +213,22 @@ nav.navbar{
         bottom: -29rem;
         left: 7rem;
     }
+
+    .card-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 
 /*For Mobile*/
 @media only screen and (max-width:425px){
     nav.navbar{
-        padding: 1.2rem;
+        padding: 1rem;
         flex-direction: row;
     }
     .nav-menu{
         display: none;
+        font-size: 1rem;
     }
 
     .hamburger{
@@ -195,5 +243,13 @@ nav.navbar{
     #banner-card2{
         bottom: -33rem;
         left: 1rem;
+    }
+
+    .hero-img{
+        width: 90%
+    }
+
+    .card-container{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
