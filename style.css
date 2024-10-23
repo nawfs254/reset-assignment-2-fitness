@@ -308,6 +308,34 @@ nav.navbar{
     background-position: center;
     border-radius: 1rem;
 }
+
+/* footer section */
+
+footer{
+    color: white;
+    background: black;
+    padding: 2rem 0 0 0;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    justify-content: center;
+    background: rgb(34, 34, 34);
+    padding: 1rem 3rem;
+}
+
+.footer-list{
+    list-style-type: none;
+    color: var(--gray);
+}
+
+.copyright{
+    text-align: center;
+    background: rgb(34, 34, 34);
+    font-size:0.8rem;
+}
 /*For Tablet*/
 @media only screen and (max-width:768px){
     nav.navbar{
