@@ -11,6 +11,7 @@
     padding: 0;
     margin: 0;
     font-family: "Inter", sans-serif;
+    
 }
 
 /*Nav section*/
@@ -158,10 +159,12 @@ nav.navbar{
 .section-title{
     font-size: 3rem;
     font-weight: 900;
+    margin: 1rem 0;
 }
 
 .section-description{
     color: var(--gray);
+    margin: 1rem 0;
 }
 
 .card-container{
@@ -186,6 +189,45 @@ nav.navbar{
 .card-description{
     color: var(--gray);
     padding: 0.5rem 0;
+}
+
+.run-section{
+    background: black;
+    padding: 1rem 0;
+}
+
+.additional{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    background-color: rgb(34, 34, 34);
+    border-radius: 1.25rem;
+    color: white;
+    padding: 2rem;
+    align-items: center;
+}
+
+.additional .section{
+    width: 50%;
+}
+
+.additional .section-img{
+    width: 40%;
+}
+
+.additional .section-img img{
+    width: 100%;
+    display: flex;
+    border-radius: 1rem;
+}
+
+.section .btn{
+    width: fit-content;
+    background-color: var(--orange);
+    padding: 0.3rem 3rem;
+    border: none;
+    margin: 1rem 0;
 }
 
 /*For Tablet*/
@@ -216,6 +258,27 @@ nav.navbar{
 
     .card-container{
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section-title{
+        font-size: 2.5rem;
+    }
+
+    .section-description{
+        font-size: 0.75rem;
+    }
+
+    .additional{
+        flex-direction: column;
+        padding: 0.8rem;
+    }
+    
+    .additional .section{
+        width: 100%;
+    }
+    
+    .additional .section-img{
+        width: 100%;
     }
 }
 
